@@ -20,7 +20,7 @@ hdf5ファイルについて勉強途中のため、その辺らしき記述自�
 delete関数の設置
 厳密にはdeleteと初期化を行う関数（材料補充を行う）
 初期化__init__()はプロセスを実行して最初にしか実行しないため__del__()を行うとインスタンス（最初の材料補充）が消えてしまう
-<\br>
+<br>
 async def delete(self, pre_code):<br>
         client = self.clients[pre_code]<br>
         client.__del__()<br>
