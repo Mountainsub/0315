@@ -21,11 +21,11 @@ delete関数の設置
 厳密にはdeleteと初期化を行う関数（材料補充を行う）
 初期化__init__()はプロセスを実行して最初にしか実行しないため__del__()を行うとインスタンス（最初の材料補充）が消えてしまう
 \n
-async def delete(self, pre_code):\n
-        client = self.clients[pre_code]\n
-        client.__del__()\n
-        client.__init__("rss", pre_code)\n
-        return\n
+async def delete(self, pre_code):
+        client = self.clients[pre_code]
+        client.__del__()
+        client.__init__("rss", pre_code)
+        return
  
  ### 並行処理
  
